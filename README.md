@@ -23,14 +23,14 @@ nanoAOD skiming code for H->ZZ->2l2Q studies.
 
    ```bash
    cd $CMSSW_BASE/src
-   git clone git@github.com:osWW-VBS/nanoAOD_skim.git PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_skim
-   cd PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_skim
+   git clone git@github.com:osWW-VBS/nanoAOD_skim.git PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_vvVBS
+   cd PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_vvVBS
    git submodule init
    git submodule update
    cd -
    cmsenv
-   # patch PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_skim/nanoAOD_tools.patch
-   cp PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_skim/data/btag/*.csv PhysicsTools/NanoAODTools/data/btagSF/.
+   # patch PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_vvVBS/nanoAOD_tools.patch
+   cp PhysicsTools/NanoAODTools/python/postprocessing/analysis/nanoAOD_vvVBS/data/btag/*.csv PhysicsTools/NanoAODTools/data/btagSF/.
    scram b
    voms-proxy-init --voms cms --valid 168:00
    ```
